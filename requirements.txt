@@ -1,0 +1,4 @@
+coveralls
+ordereddict
+pytest>=4.1.1
+pytest-cov

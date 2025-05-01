@@ -1,0 +1,18 @@
+language: python
+python:
+- '3.6'
+virtual_env:
+  system_site_packages: true
+install:
+- pip install --upgrade pip
+- pip install -r requirements.txt
+script: pytest --cov=cnab240
+after_success: coveralls
+deploy:
+  provider: pypi
+  user: trustcode
+  password:
+    secure: gZbecKmFhmaYAxz5g7jAlizVFWLa07XGzwbv3lks7sAMRx2mINmUBhnpwVJKYOk6Av0yCogtWaIWfl4MNvJuCKNUEkr8wmOl3ajKsDrC7hL7F81+zkCu0Lacx31OCIvT/zoP/+GDy49kLe91+Fp3MZ49Xg9Q2ZLbUliHsZ64u8FNnb9r/aN6I7jQWyN6Hm0e3qt3eqrR8SrMyNa0RroIMz9hEaG1VjNhJ/bfhNMchzo50h8yNYtDphQ0APji4jFKvjbnm6ddMBYCHsUQG+iSeyyuwrEqrGhh+vJCAl7nyQx35ZWm60AXHQ0A0esn3NnnuD5OlM8OZklaYZfSJdgV975gDdr4CsSJx7qymf5kGLZF8a9ACyzdepF4V0bLK4lkYXCTCfLpzWxjQLOHQm3KHR/wL6jxuCnRg6Cl60bt70awoWbfXpNZNrL05J4jJhXQZsh1vMFdvO/4aRSJrROEtMfMUE8jjwVVIpIGNkRgohyRT/LrcxrC37tUGO9F0B0pPWhZF2+KTMT2LrxGd9QmADngS7grdWI+/hEsIrq3C8/tWqmiojqQ2yPsLz8Ebw135vEtdEmjFbfu7J4TiNVmc5ZH5ytXhG2vYoh6jLBBVXbpxMx9Fg/svy0C0KrQnXPb2zxGcKXw/itNbfxrmiqFsbqESE5BqOcPIXtYv9BkJMw=
+  on:
+    branch: master3
+  distributions: bdist_wheel
