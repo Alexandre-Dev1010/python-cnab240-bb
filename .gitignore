@@ -29,5 +29,4 @@ pip-log.txt
 .cache
 venv
 gerar_cnab_bb.py
-LICENSE.md
 remessa_bb.rem

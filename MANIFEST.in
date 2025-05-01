@@ -1,3 +1,5 @@
+include LICENSE.md
+include README.md
 recursive-include cnab240/bancos/banco_brasil/specs *.json
 recursive-include cnab240/bancos/bradesco/specs *.json
 recursive-include cnab240/bancos/cecred/specs *.json
