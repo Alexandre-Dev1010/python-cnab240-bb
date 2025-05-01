@@ -1,0 +1,8 @@
+recursive-include cnab240/bancos/banco_brasil/specs *.json
+recursive-include cnab240/bancos/bradesco/specs *.json
+recursive-include cnab240/bancos/cecred/specs *.json
+recursive-include cnab240/bancos/cef/specs *.json
+recursive-include cnab240/bancos/itau/specs *.json
+recursive-include cnab240/bancos/santander/specs *.json
+recursive-include cnab240/bancos/sicoob/specs *.json
+recursive-include cnab240/bancos/sicredi/specs *.json
